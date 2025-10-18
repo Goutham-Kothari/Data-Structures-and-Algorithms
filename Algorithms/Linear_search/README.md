@@ -1,108 +1,52 @@
-# 🔎 Linear Search in Java
+### **What is Linear Search?**
 
-This repository contains a simple **Java program** to perform **linear search** on an array.  
-It demonstrates basic **array handling**, **user input**, and **search algorithms** in Java.
+Linear search (also called **sequential search**) is the simplest way to find an element in a list or array.
 
----
+**Key idea:**
 
-## 🧠 Overview
-
-- **Language:** Java  
-- **Topic:** Arrays, Searching Algorithm  
-- **Algorithm Used:** Linear Search (Sequential Search)  
-- **Purpose:** Learn and practice basic array operations and search techniques in Java.
+* Start from the beginning of the array.
+* Compare each element with the target one by one.
+* Stop when you find the target or reach the end.
 
 ---
 
-## 📂 File Structure
+### **Steps of Linear Search**
 
-```
+1. Start at the first element of the array (`index = 0`).
+2. Compare the element with the target:
 
-Search1/
-└── Search1.java
-
-```
-
----
-
-## 💻 Program Description
-
-The program allows the user to:
-
-1. Input the **size of the array**.  
-2. Enter **array elements**.  
-3. Enter a **key element** to search.  
-4. Perform **linear search** and display whether the element is **found** or **not found**.
+   * If it matches → return the index (found it!).
+   * If it doesn’t → move to the next element (`index + 1`).
+3. Repeat step 2 until you reach the end of the array.
+4. If the end is reached and no match is found → the target **does not exist** in the array.
 
 ---
 
-## 📝 Example Run
+### **Example**
 
-```
+Array: `[4, 2, 7, 9, 5]`
+Target = `9`
 
-Enter the size of Array: 5
-Enter the value for 0 th index: 10
-Enter the value for 1 th index: 20
-Enter the value for 2 th index: 30
-Enter the value for 3 th index: 40
-Enter the value for 4 th index: 50
-Enter the Element to Search: 30
-Element Found
+1. Check `arr[0] = 4` → not 9 → move to next
+2. Check `arr[1] = 2` → not 9 → move to next
+3. Check `arr[2] = 7` → not 9 → move to next
+4. Check `arr[3] = 9` → match found ✅
 
-```
-```
-
-Enter the size of Array: 3
-Enter the value for 0 th index: 1
-Enter the value for 1 th index: 2
-Enter the value for 2 th index: 3
-Enter the Element to Search: 5
-Element NOT Found
-
-````
+**Result:** Target `9` is at index `3`.
 
 ---
 
-## ⚙️ How to Run
+### **Time Complexity**
 
-1. **Clone the repository**:
-
-```bash
-git clone https://github.com/<your-username>/Search1.git
-````
-
-2. **Navigate to the project folder**:
-
-```bash
-cd Search1
-```
-
-3. **Compile the program**:
-
-```bash
-javac Search1.java
-```
-
-4. **Run the program**:
-
-```bash
-java Search1
-```
+* **Best case:** O(1) → target is the first element
+* **Worst & average case:** O(n) → must check every element
 
 ---
 
-## 📌 Key Concepts
+### **Key Points**
 
-* **Static Arrays** – Fixed-size array declared at runtime.
-* **Linear Search Algorithm** – Sequentially checks each element to find the key.
-* **Scanner Class** – Takes user input from console.
-* **Methods** – `inputsToArray()` for input and `linearSearch()` for search functionality.
-
----
-
-## 🏷️ License
-
-This project is licensed under the **MIT License**.
-Feel free to use, modify, and share this code with proper attribution.
+* Works for **unsorted or sorted arrays**.
+* Very simple but **less efficient** for large arrays compared to binary search.
+* No need for the array to be sorted.
 
 ---
