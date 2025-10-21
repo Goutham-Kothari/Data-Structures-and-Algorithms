@@ -71,3 +71,8 @@ arr[1] = 25;                // Update element at index 1
 * Inserting/deleting in the middle is costly (O(n))
 
 ---
+
+### Largest_Smallest.java
+
+Java program, **Largest_Smallest.java
+**, finds the largest and smallest numbers in an array. It defines two methods — `getLargest()` and `getSmallest()` — which iterate through the array elements to determine the maximum and minimum values, respectively. The `main()` method initializes an integer array `{1, 2, 6, 3, 5}` and prints the largest and smallest values found. This program demonstrates basic array traversal, comparison operations, and the use of `Integer.MIN_VALUE` and `Integer.MAX_VALUE` as initial extremes for finding boundaries efficiently.
