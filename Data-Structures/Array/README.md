@@ -81,3 +81,13 @@ Java program, **Largest_Smallest.java
 ### ReverseArray.java
 
 **ReverseArray.java**, reverses the elements of an integer array. The `main()` method initializes the array `{2, 4, 6, 8, 10}` and calls the `reverse()` method to reverse its order. Inside the `reverse()` method, two pointers — `first` (starting from the beginning) and `last` (starting from the end) — are used to swap elements until they meet in the middle. After the reversal, the updated array is printed as output. This program demonstrates how to reverse an array using a simple **two-pointer technique** without using extra space.
+
+---
+### Pairs_Array.java
+
+* Take an array of numbers.
+* Use two loops:
+  * The **first loop** picks one element.
+  * The **second loop** picks every element that comes **after** it.
+* Print each pair made from these two elements.
+* Keep a count of how many pairs are printed.
