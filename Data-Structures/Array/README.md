@@ -76,3 +76,8 @@ arr[1] = 25;                // Update element at index 1
 
 Java program, **Largest_Smallest.java
 **, finds the largest and smallest numbers in an array. It defines two methods — `getLargest()` and `getSmallest()` — which iterate through the array elements to determine the maximum and minimum values, respectively. The `main()` method initializes an integer array `{1, 2, 6, 3, 5}` and prints the largest and smallest values found. This program demonstrates basic array traversal, comparison operations, and the use of `Integer.MIN_VALUE` and `Integer.MAX_VALUE` as initial extremes for finding boundaries efficiently.
+
+---
+### ReverseArray.java
+
+**ReverseArray.java**, reverses the elements of an integer array. The `main()` method initializes the array `{2, 4, 6, 8, 10}` and calls the `reverse()` method to reverse its order. Inside the `reverse()` method, two pointers — `first` (starting from the beginning) and `last` (starting from the end) — are used to swap elements until they meet in the middle. After the reversal, the updated array is printed as output. This program demonstrates how to reverse an array using a simple **two-pointer technique** without using extra space.
