@@ -91,3 +91,14 @@ Java program, **Largest_Smallest.java
   * The **second loop** picks every element that comes **after** it.
 * Print each pair made from these two elements.
 * Keep a count of how many pairs are printed.
+
+---
+### SubArray.java
+
+* Take an array of numbers.
+* Use **three loops**:
+
+  1. The **first loop (`i`)** marks the **starting index** of a subarray.
+  2. The **second loop (`j`)** marks the **ending index** of that subarray.
+  3. The **third loop (`k`)** prints all elements from `i` to `j` — that is one subarray.
+* Count each subarray printed using `totalSubArray++`.
