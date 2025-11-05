@@ -12,6 +12,8 @@ public class Recursion_OptimizedPower {
     }
 
     public static void main(String[] args) {
+        // Output: 1024
+        // Calculates 2^10 using optimized recursive approach
         System.out.println(optimizedPower(2,10));
     }
 }
