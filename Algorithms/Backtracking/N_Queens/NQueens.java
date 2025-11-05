@@ -1,4 +1,5 @@
 public class NQueens {
+    static int count = 0;
     public static void main(String[] args) {
         int n = 4;
         char board[][] = new char[n][n];
@@ -8,11 +9,13 @@ public class NQueens {
             }
         }
         nQueens(board, 0);
+        System.out.println("Total solutions for n = " + count);
     }
 
     public static void nQueens(char board[][], int row) {
         if (row == board.length) {
             printArr(board);
+            count++;
             return;
         }
         for (int i = 0; i < board.length; i++) {
