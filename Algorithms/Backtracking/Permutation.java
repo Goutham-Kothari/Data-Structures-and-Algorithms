@@ -2,7 +2,7 @@ public class Permutation {
     public static void findPermutation(String str, String ans) {
         // Basecase
         if (str.length() == 0) {
-            System.err.println(ans);
+            System.out.println(ans);
             return;
         }
         // Recursion
