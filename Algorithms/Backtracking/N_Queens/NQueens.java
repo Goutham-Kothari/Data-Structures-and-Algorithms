@@ -15,14 +15,14 @@ public class NQueens {
     public static void nQueens(char board[][], int row) {
         if (row == board.length) {
             printArr(board);
-            count++;
+            count++; // count no of solution
             return;
         }
         for (int i = 0; i < board.length; i++) {
             if (isSafe(board, row, i)) {
                 board[row][i] = 'Q';
-                nQueens(board, row+1);
-                board[row][i] = 'x';
+                nQueens(board, row+1); // function call
+                board[row][i] = 'x'; // backtarcking
             }
         }
     }
