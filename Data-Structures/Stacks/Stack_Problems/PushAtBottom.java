@@ -1,5 +1,5 @@
 import java.util.*;
-public class Stack1 {
+public class PushAtBottom {
     public static void main(String[] args) {
         Stack<Integer> s = new Stack<>();
         s.push(1);
